@@ -1,0 +1,6 @@
+framework module Pods_Masu_Tests {
+  umbrella header "Pods-Masu_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,46 +2,39 @@
 
 import Quick
 import Nimble
+import Nimble_Snapshots
 import Masu
 
-class TableOfContentsSpec: QuickSpec {
+class MasuSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
+        describe("view matching") {
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
+            let sizes: [CGSize] = [
+                CGSizeMake(200, 200),
+                CGSizeMake(200, 100),
+                CGSizeMake(100, 200)
+            ]
+            
+            for size in sizes as [CGSize] {
+                context(String(format: "size %.0fx%.0f", size.width, size.height)) {
+                    var masu: Masu!
+                    
+                    beforeEach {
+                        masu = Masu(frame: CGRectMake(0, 0, size.width, size.height))
                     }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
+                    
+                    it("matches default") {
+                        expect(masu).to(haveValidSnapshot())
+                    }
+                    
+                    it("matches background") {
+                        masu.backgroundColor = UIColor(red: 0.75, green: 1, blue: 0.75, alpha: 1)
+                        expect(masu).to(haveValidSnapshot())
+                    }
+                    
+                    it("matches label") {
+                        masu.text = "Label"
+                        expect(masu).to(haveValidSnapshot())
                     }
                 }
             }

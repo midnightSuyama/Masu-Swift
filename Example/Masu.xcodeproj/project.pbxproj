@@ -45,7 +45,7 @@
 		97505B5E86954ADB0A1EA21D /* Pods-Masu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masu_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Masu_Tests/Pods-Masu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A59FADC6AF08D9EC12639397 /* Pods-Masu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masu_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masu_Tests/Pods-Masu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D95F356DF3C78B4881384801 /* Pods-Masu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masu_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masu_Example/Pods-Masu_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F5331A46E7431FB113E1CB45 /* Masu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Masu.podspec; path = ../Masu.podspec; sourceTree = "<group>"; };
+		F5331A46E7431FB113E1CB45 /* Masu-Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Masu-Swift.podspec"; path = "../Masu-Swift.podspec"; sourceTree = "<group>"; };
 		FC04AF802BCCAD070946FA2E /* Pods_Masu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Masu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,7 +141,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				F5331A46E7431FB113E1CB45 /* Masu.podspec */,
+				F5331A46E7431FB113E1CB45 /* Masu-Swift.podspec */,
 				8447DA05496E61FC6640799A /* README.md */,
 				04BD370088A69C8FD7A2767C /* LICENSE */,
 			);

@@ -1,0 +1,6 @@
+framework module Masu {
+  umbrella header "Masu-umbrella.h"
+
+  export *
+  module * { export * }
+}
