@@ -14,6 +14,8 @@ Placeholder for iOS prototyping with Swift
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ``` swift
+import Masu_Swift
+
 // UIView demo
 let masu = Masu(frame: CGRectMake(0, 300, 220, 100))
 masu.backgroundColor = UIColor(red: 0, green: 0.5, blue: 0.5, alpha: 1)
@@ -38,7 +40,9 @@ view.showMasu()
 Masu is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-	pod "Masu-Swift"
+``` ruby
+pod "Masu-Swift"
+```
 
 ## Author
 
